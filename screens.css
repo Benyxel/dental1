@@ -20,21 +20,40 @@
 @media screen and (max-width:996px){
      .bi-list{
         display: block;
-        font-size: 24px;
+        font-size: 28px;
         cursor: pointer;
+        transition: all 0.3s ease;
+        padding: 8px;
+        border-radius: 6px;
+        color: #333;
     }
 
+    .bi-list:hover{
+        background-color: #f0f0f0;
+        color: #007bff;
+        transform: scale(1.1);
+    }
 
     .left-set{
-    display: flex;
-    margin-top: 10px;
-    align-items: center;
-}
+        display: flex;
+        margin-top: 10px;
+        align-items: center;
+    }
     
     #close{
         display: none; 
-        font-size: 24px;
+        font-size: 28px;
         cursor: pointer;
+        transition: all 0.3s ease;
+        padding: 8px;
+        border-radius: 6px;
+        color: #333;
+    }
+
+    #close:hover{
+        background-color: #f0f0f0;
+        color: #dc3545;
+        transform: scale(1.1);
     }
 
     .navbar .right-set ul li a{
@@ -48,24 +67,36 @@
     justify-content: start;
     align-items: center;
     background-color: white;
-    box-shadow: none;
-    padding: 10px 20px;
-    
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 15px 20px;
+    border-radius: 0 0 10px 10px;
 }
 
 #toggle-btn{
     display: block;
     position: absolute;
-    left: 0;
-    margin-left: 20px;
-}
-#toggle-btn #close{
-    transition: 0.5s;
+    left: 15px;
+    top: 15px;
+    z-index: 1000;
+    background-color: rgba(255,255,255,0.95);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    border: 2px solid rgba(0,123,255,0.1);
 }
 
+#toggle-btn:hover{
+    box-shadow: 0 6px 20px rgba(0,123,255,0.3);
+    border-color: rgba(0,123,255,0.3);
+    transform: translateY(-2px);
+}
+
+#toggle-btn, #close{
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .bi-list{
-    font-size: 40px;
+    font-size: 28px;
 }
 
 
@@ -74,53 +105,75 @@
 }
 
 #sidebar.toggle{
-    width: 300px;
-    background: rgba(177, 177, 163, 0.841);
+    width: 320px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(240,248,255,0.95));
     height: 100vh;
-    transition: all 0.3s ease;
-    
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 2px 0 15px rgba(0,0,0,0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 0 15px 15px 0;
 }
 
-
-
-#sidebar.toggle #toggle-btn ,#close{
+#sidebar.toggle #toggle-btn, #sidebar.toggle #close{
     order: -1; 
     position: static;
-   font-size: 40px;
+    font-size: 32px;
     align-self: flex-start;
-    margin: 0;
-    
+    margin: 10px 0 20px 0;
+    padding: 12px;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+#sidebar.toggle #close:hover{
+    background-color: rgba(220,53,69,0.1);
+    color: #dc3545;
+    transform: scale(1.1) rotate(90deg);
+}
 
 #sidebar.toggle .nav-c{
     order: 1; 
-    
+    width: 100%;
 }
 
 #sidebar.toggle .right-set{
     order: 2; 
+    width: 100%;
 }
 #sidebar{
     width: 100%;
     height: auto;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #sidebar.toggle .right-set ul li a {
-    display: block ; 
+    display: block;
     color: #333;
     text-decoration: none;
-    border-bottom: 1px solid #ffffff;
-    margin:0;
-    width: 100%; 
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin: 0;
+    width: 100%;
+    padding: 15px 20px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+#sidebar.toggle .right-set ul li a:hover {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    transform: translateX(10px);
+    box-shadow: 0 4px 15px rgba(0,123,255,0.3);
+    border-bottom: 1px solid transparent;
 }
 
 #sidebar.toggle .right-set ul {
     display: flex;
     flex-direction: column;    
     width: 100%;
-    padding: 0;
+    padding: 20px 0;
     margin: 0;
     list-style: none;
 }
