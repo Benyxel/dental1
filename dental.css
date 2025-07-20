@@ -190,10 +190,15 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 .card:hover{
-
+    width: 220px;
+    height: 250px;
+    border: none;
+    margin-top: auto;
+    transition: 0.5s;
 }
 
 .card-s{
@@ -202,6 +207,16 @@
     border: none;
     margin-top: auto;
 }
+.card-s:hover{
+     width: 220px;
+    height: 330px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.5s;
+}
+
 
 .blue-card{
     display: flex;
