@@ -115,6 +115,10 @@
     width: 100%;
     height: 100%;
 }
+.l-set img:hover, .r-set img:hover{
+    transform:scale(1.4);
+    transition: 0.5s;
+}
 
 .spanimg img{
     object-fit: cover;
@@ -132,10 +136,40 @@
     
 }
 
+.m-set{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .m-set h1, span{
     color: #007bff;
 }
+
 [m-set] p{
     margin: 0;
     padding: 0;
 }
+.sec-btns{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+.sec-btns button{
+    margin-top: 30px;
+    border-radius: 50px;
+    padding: 5px 10px;
+    border: solid 2px #227e88;
+    background-color: transparent;
+    color: #227e88;
+    font-weight: 500;
+}
+
+.sec-btns button:hover{
+    background-color: #007bff;
+    color: white;
+    transition: 0.3s;
+    border: none;
+}
+
