@@ -96,3 +96,46 @@
 
 
 
+/* main contents */
+
+.herosec{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.l-set, .r-set{
+    width: 200px;
+    height: 200px;
+}
+
+.l-set img, .r-set img{
+    width: 100%;
+    height: 100%;
+}
+
+.spanimg img{
+    object-fit: cover;
+    border-radius: 50px;
+    width: 100px;
+    height: 40px;
+   
+}
+
+
+[m-set] h1{
+    font-size: 50px ;
+    font-weight: 900;
+    margin-bottom: 20px;
+    
+}
+
+.m-set h1, span{
+    color: #007bff;
+}
+[m-set] p{
+    margin: 0;
+    padding: 0;
+}
