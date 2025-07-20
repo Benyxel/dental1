@@ -333,7 +333,7 @@ h1,h2,h3,h4,h5,h6, p {
 .btn2:hover{
      background-color: #007bff;background: linear-gradient(135deg, #007bff, #0056b3);
     transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    color: rgba(255, 255, 255, 0.311);
+    color: rgb(255, 255, 255);
     transition: 0.7s;
     border: none;
     box-shadow: 0 0 9px 1px;
@@ -374,7 +374,7 @@ h1,h2,h3,h4,h5,h6, p {
 .sec-4{
     height: 700px;
     text-align: center;
-    margin-top:100px;
+    
     background-color: #0071e9;
     padding: 50px;
 }
