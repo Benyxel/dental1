@@ -177,5 +177,28 @@
     margin: 0;
     list-style: none;
 }
+
+
+/* main contents styling */
+
+.herosec{
+    display: flex;
+    flex-direction: column;
 }
 
+.l-set, .r-set{
+    display: none;
+}
+
+div[m-set] h1 {
+    font-size: 25px  
+}
+div[m-set] p{
+    font-size: 10px 
+}
+
+
+
+
+
+}

@@ -139,11 +139,7 @@ h1,h2,h3,h4,h5,h6, p {
     
 }
 
-.m-set{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 .m-set h1, span{
     color: #007bff;
