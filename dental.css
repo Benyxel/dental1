@@ -324,12 +324,19 @@
     color: white;
     border: none;
     margin-bottom: 30px;
-    
+}
+
+.btn2:hover{
+     background-color: #007bff;background: linear-gradient(135deg, #007bff, #0056b3);
+    transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    color: rgba(255, 255, 255, 0.311);
+    transition: 0.7s;
+    border: none;
+    box-shadow: 0 0 9px 1px;
 }
 
 .sec-3{
     display: flex;
-    background:to top, linear-gradient(white, white);
     justify-content: center;
     padding-top: 100px;
 }
