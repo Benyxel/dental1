@@ -8,7 +8,7 @@
     background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(240,248,255,0.95));
     backdrop-filter: blur(15px);
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    padding: 15px 30px;
+    padding: 15px 20px;
     border-radius: 0 0 15px 15px;
     border-bottom: 2px solid rgba(0,123,255,0.1);
 }
@@ -56,7 +56,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px 20px;
+    padding: 5px 20px;
     border-radius: 25px;
     font-weight: 500;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -147,8 +147,10 @@
 }
 
 [m-set] p{
+    font-size: 14px;
     margin: 0;
     padding: 0;
+    font-weight: 500;
 }
 .sec-btns{
     display: flex;
@@ -167,9 +169,79 @@
 }
 
 .sec-btns button:hover{
-    background-color: #007bff;
+    background-color: #007bff;background: linear-gradient(135deg, #007bff, #0056b3);
+    transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     color: white;
-    transition: 0.3s;
+    transition: 0.7s;
     border: none;
 }
 
+.card-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.card{
+    width: 220px;
+    height: 330px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.card:hover{
+
+}
+
+.card-s{
+    width: 220px;
+    height: 250px;
+    border: none;
+    margin-top: auto;
+}
+
+.blue-card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color:#0071e9;
+    border-radius: 20px;
+}
+
+.bi-people-fill{
+    background-color: #ffffff43;
+    text-align: center;
+    padding: 5px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    color: white;
+}
+
+.blue-card h1{
+    bottom: 50px;
+    font-weight: 900;
+}
+.blue-card h1,.sd{
+    color: white;
+    position: absolute;
+    left: 30px;
+}
+
+.sd{
+    bottom: 10px;
+}
+
+.card .card-s, img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
