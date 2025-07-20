@@ -158,7 +158,7 @@
     gap: 30px;
     align-items: center;
 }
-.sec-btns button{
+.btn{
     margin-top: 30px;
     border-radius: 50px;
     padding: 5px 10px;
@@ -168,7 +168,7 @@
     font-weight: 500;
 }
 
-.sec-btns button:hover{
+.btn:hover{
     background-color: #007bff;background: linear-gradient(135deg, #007bff, #0056b3);
     transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     color: white;
@@ -268,7 +268,7 @@
     padding: 50px;
 }
 
-.sec-2 h1{
+.sec2h1{
     font-size: 50px;
     color: white;
     font-weight: 900;
@@ -280,13 +280,20 @@
     justify-content: center;
     gap: 40px;
     margin-bottom: 50px;
-    
-
 }
 
 .sec-2card{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
     width: 300px;
-    height: 300px;
+    height: 280px;
     background-color: white;
     border-radius: 10px;
+}
+
+.sec-2card h4{
+    font-weight:800;
 }
