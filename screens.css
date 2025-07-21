@@ -1,39 +1,14 @@
 
 @media screen and (min-width: 997px){
-    
-    #toggle-btn{
-        display: none;
-    }
-    
-    #close{
-        display: none;
-    }
-    
-    #sidebar{
-        display: block;
-        width: 100%;
-        height: auto;
-        background-color: white;
-    }
+  
+   
 }
 
 
 @media screen and (max-width:699px){
-     .bi-list{
-        display: block;
-        font-size: 28px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-
-        border-radius: 6px;
-        color: #333;
-    }
-
-    .bi-list:hover{
-        background-color: #f0f0f0;
-        color: #007bff;
-        transform: scale(1.1);
-    }
+     .bi-list {
+    display: block !important;
+}
 
     .left-set{
         display: flex;
@@ -42,57 +17,30 @@
         justify-content: center;
         
     }
-    
-    #close{
-        display: none; 
-        font-size: 28px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        padding: 8px;
-        border-radius: 6px;
-        color: #333;
-    }
-
-    #close:hover{
-        background-color: #f0f0f0;
-        color: #dc3545;
-        transform: scale(1.1);
-    }
 
     .navbar .right-set ul li a{
         display: none;
     }
-#toggle-btn{
-    font-size: 30px;
-    display: block;
-    position: absolute;
-    left: 15px;
-    top: 15px;
-    z-index: 1000;
-    background-color: rgba(255,255,255,0.95);
-    border-radius: 12px;
+
+    .sidebar-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #ffffffa7;
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-    border: 2px solid rgba(0,123,255,0.1);
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.077);
+    display:none;
+    padding-top: 20px;
+    flex-direction: column;
 }
 
-#toggle-btn:hover{
-    box-shadow: 0 6px 20px rgba(0,123,255,0.3);
-    border-color: rgba(0,123,255,0.3);
-    transform: translateY(-2px);
+.bi-x {
+    font-size: 40px;
+    display: block;
 }
-
-#toggle-btn, #close{
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.bi-list{
-    font-size: 28px;
-}
-
-
-
-
 
 /* main contents styling */
 
@@ -130,27 +78,38 @@ div[m-set] p{
     .navbar .right-set ul li a{
         display: none !important;
     }
-    
-    /* Show toggle button */
-    #toggle-btn{
-        
-        font-size: 30px;
-        display: block;
-        position: absolute;
-        left: 15px;
-        top: 15px;
-        z-index: 1000;
-        background-color: rgba(255,255,255,0.95);
-        border-radius: 12px;
-        backdrop-filter: blur(10px);
-        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-        border: 2px solid rgba(0,123,255,0.1);
-    }
 
-    #toggle-btn:hover{
-        box-shadow: 0 6px 20px rgba(0,123,255,0.3);
-        border-color: rgba(0,123,255,0.3);
-        transform: translateY(-2px);
-    }
+      .bi-list {
+    display: block !important;
+      }
+
+    
+    .sidebar-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #ffffffa7;
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.077);
+    display:none;
+    padding-top: 20px;
+    flex-direction: column;
+}
+
+.bi-x {
+    font-size: 40px;
+    display: block;
+}
+ 
+
+    
+#sidebar.toggle{
+    width: 0;
+    opacity: 0;
+    padding: 0;
+}
 
 }
