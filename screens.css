@@ -59,9 +59,46 @@ div[m-set] p{
     flex-wrap: wrap;
 }
 
+.sec-3c{
+   padding: 30px;
+   
 }
 
-@media screen and (min-width: 700px) and (max-width: 996px){
+.sec-3{
+   
+    padding-top: 10px !important;
+}
+
+.sec2h1{
+    font-size: 25px !important;
+    font-weight: 600 !important;
+}
+
+[m-set] p{
+    width: 240px;
+    font-size: 14px !important;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+.sec-3c{
+    padding: 40px !important;
+}
+.sec-3c h1{
+    
+    font-size: 20px !important;
+    font-weight: 700;
+}
+
+.sec-3 img{
+    width: 300px !important;
+    height: 300px !important;
+}
+
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 1177px){
     
     /* Hide the desktop navbar styling */
     .navbar .right-set ul li a{
@@ -87,10 +124,23 @@ div[m-set] p{
     display: block;       
 }
 
+.card-container{
+  display: flex;
+    flex-wrap: wrap;       
+    gap: 20px;
+    justify-content: center;
+}
 
+.sec-3{
+    display: flex;
+    justify-content: space-around;
+}
 
-
-
-
+.r-set img, .l-set img{
+    display: none;
+}
+.sec2h1{
+    font-size: 40px !important;
+}
 
 }
