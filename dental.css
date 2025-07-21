@@ -103,7 +103,23 @@ h1,h2,h3,h4,h5,h6, p {
 }
 
 
-
+   .sidebar-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #fffffff1;
+    box-shadow: 10px 0 10px rgba(124, 124, 124, 0.404);
+    display:flex;
+    backdrop-filter: blur(10px);
+    padding-top: 20px;
+    transition: all 0.3s ease;
+    opacity: 1;
+    overflow: hidden;
+    flex-direction: column;
+}
 
 
 .sideright-set{
@@ -144,9 +160,7 @@ h1,h2,h3,h4,h5,h6, p {
     
 }
 
-.sidebar-nav{
-    display: none;
-}
+
 
 
 .sideright-set ul li a::before {
@@ -260,25 +274,9 @@ h1,h2,h3,h4,h5,h6, p {
     justify-content: center;
     gap: 40px;
     margin-top: 40px;
+   
 }
 
-.card{
-    width: 220px;
-    height: 330px;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-}
-
-.card:hover{
-    width: 220px;
-    height: 250px;
-    border: none;
-    margin-top: auto;
-    transition: 0.5s;
-}
 
 .card-s{
     width: 220px;
