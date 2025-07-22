@@ -4,10 +4,12 @@ const hide = document.querySelector("#close-btn");
 
 hide.addEventListener("click", function () {
   sidebar.classList.remove("active");
+  document.body.style.overflow = "auto"; 
 });
 
 toggle.addEventListener("click", function () {
   sidebar.classList.add("active");
+  document.body.style.overflow = "hidden"; 
 });
 
 // Close sidebar when clicking outside
