@@ -1,6 +1,6 @@
 
 @media screen and (min-width: 997px){
-  
+    
    .sidebar-nav {
     display: none !important;
    }
@@ -93,6 +93,13 @@ div[m-set] p{
 .sec-3 img{
     width: 300px !important;
     height: 300px !important;
+}
+
+.sec-5c div img{
+    object-fit: cover;
+width: 200px !important;
+    height: 250px !important;
+
 }
 
 

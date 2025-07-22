@@ -491,4 +491,16 @@ h1,h2,h3,h4,h5,h6, p {
     margin: 0;
     color: white;
 }
-
+.sec-5{
+    padding: 50px;
+}
+.sec-5c{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.sec-5c div img{
+    width: 500px;
+    height: 350px;
+}
