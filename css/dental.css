@@ -11,6 +11,7 @@ h1,h2,h3,h4,h5,h6, p {
     color: black;
 }
 .navbar{
+    position: sticky;
     display: flex;
     justify-content: space-between;
     background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(240,248,255,0.95));
@@ -293,13 +294,11 @@ h1,h2,h3,h4,h5,h6, p {
     margin-top: auto;
 }
 .card-s:hover{
-     width: 220px;
-    height: 330px;
+    transform: scale(1.1);
     border: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     transition: 0.5s;
+    
 }
 
 
