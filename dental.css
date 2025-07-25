@@ -501,6 +501,7 @@ h1,h2,h3,h4,h5,h6, p {
     gap: 50px;
 }
 .sec-5c div img{
+    object-fit: cover;
     width: 500px;
-    height: 350px;
+    height: 300px;
 }
